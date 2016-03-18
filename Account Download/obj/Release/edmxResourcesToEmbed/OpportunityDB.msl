@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ARSalesforceModel2StoreContainer" CdmEntityContainer="AROpportunityEntities">
+    <EntitySetMapping Name="AROpportunities">
+      <EntityTypeMapping TypeName="ARSalesforceModel2.AROpportunity">
+        <MappingFragment StoreEntitySet="AROpportunities">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="StageName" ColumnName="StageName" />
+          <ScalarProperty Name="CloseDate" ColumnName="CloseDate" />
+          <ScalarProperty Name="LeadSource" ColumnName="LeadSource" />
+          <ScalarProperty Name="IsClosed" ColumnName="IsClosed" />
+          <ScalarProperty Name="HasOpportunityLineItem" ColumnName="HasOpportunityLineItem" />
+          <ScalarProperty Name="OwnerId" ColumnName="OwnerId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedById" ColumnName="CreatedById" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedById" ColumnName="LastModifiedById" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          <ScalarProperty Name="FiscalQuarter" ColumnName="FiscalQuarter" />
+          <ScalarProperty Name="FiscalYear" ColumnName="FiscalYear" />
+          <ScalarProperty Name="Fiscal" ColumnName="Fiscal" />
+          <ScalarProperty Name="Follow_Up_on_Marketing_Campaign__c" ColumnName="Follow_Up_on_Marketing_Campaign__c" />
+          <ScalarProperty Name="Reason_for_NIGO__c" ColumnName="Reason_for_NIGO__c" />
+          <ScalarProperty Name="Assets__c" ColumnName="Assets__c" />
+          <ScalarProperty Name="Participants__c" ColumnName="Participants__c" />
+          <ScalarProperty Name="Request_for_Information__c" ColumnName="Request_for_Information__c" />
+          <ScalarProperty Name="Invoice_Status__c" ColumnName="Invoice_Status__c" />
+          <ScalarProperty Name="Commission_Status__c" ColumnName="Commission_Status__c" />
+          <ScalarProperty Name="Reason_for_Decline_if_applicable__c" ColumnName="Reason_for_Decline_if_applicable__c" />
+          <ScalarProperty Name="Client_Oppty_Type__c" ColumnName="Client_Oppty_Type__c" />
+          <ScalarProperty Name="Plan_Type__c" ColumnName="Plan_Type__c" />
+          <ScalarProperty Name="Current_Platform_Services__c" ColumnName="Current_Platform_Services__c" />
+          <ScalarProperty Name="Platform_Relationship_Length__c" ColumnName="Platform_Relationship_Length__c" />
+          <ScalarProperty Name="Current_Consultant_Advisor__c" ColumnName="Current_Consultant_Advisor__c" />
+          <ScalarProperty Name="Advisor_Relationship_Length__c" ColumnName="Advisor_Relationship_Length__c" />
+          <ScalarProperty Name="Plan_Strength_Weakness__c" ColumnName="Plan_Strength_Weakness__c" />
+          <ScalarProperty Name="Decision_Making_Process__c" ColumnName="Decision_Making_Process__c" />
+          <ScalarProperty Name="Next_Steps__c" ColumnName="Next_Steps__c" />
+          <ScalarProperty Name="Opportunity_Type__c" ColumnName="Opportunity_Type__c" />
+          <ScalarProperty Name="Leads_per_month__c" ColumnName="Leads_per_month__c" />
+          <ScalarProperty Name="Opportunity_stage__c" ColumnName="Opportunity_stage__c" />
+          <ScalarProperty Name="Acccount_Type__c" ColumnName="Acccount_Type__c" />
+          <ScalarProperty Name="Current_Auditor_Relationship_Length__c" ColumnName="Current_Auditor_Relationship_Length__c" />
+          <ScalarProperty Name="Payroll__c" ColumnName="Payroll__c" />
+          <ScalarProperty Name="Client_Manager__c" ColumnName="Client_Manager__c" />
+          <ScalarProperty Name="Client_Manager_Phone__c" ColumnName="Client_Manager_Phone__c" />
+          <ScalarProperty Name="Client_Manager_Email__c" ColumnName="Client_Manager_Email__c" />
+          <ScalarProperty Name="Parent_Account__c" ColumnName="Parent_Account__c" />
+          <ScalarProperty Name="Appointment_Date__c" ColumnName="Appointment_Date__c" />
+          <ScalarProperty Name="PrimaryContact__c" ColumnName="PrimaryContact__c" />
+          <ScalarProperty Name="Primary_Contact_Phone__c" ColumnName="Primary_Contact_Phone__c" />
+          <ScalarProperty Name="Primary_Contact_Email__c" ColumnName="Primary_Contact_Email__c" />
+          <ScalarProperty Name="Primary_Contact_Best_Way_to_Reach__c" ColumnName="Primary_Contact_Best_Way_to_Reach__c" />
+          <ScalarProperty Name="Primary_Contact_Title__c" ColumnName="Primary_Contact_Title__c" />
+          <ScalarProperty Name="DB_Plan_Assets__c" ColumnName="DB_Plan_Assets__c" />
+          <ScalarProperty Name="Current_Auditor_Siff_only__c" ColumnName="Current_Auditor_Siff_only__c" />
+          <ScalarProperty Name="Number_of_Personnel_File_Locations__c" ColumnName="Number_of_Personnel_File_Locations__c" />
+          <ScalarProperty Name="Referred_By__c" ColumnName="Referred_By__c" />
+          <ScalarProperty Name="Total_Leads__c" ColumnName="Total_Leads__c" />
+          <ScalarProperty Name="Notes_on_Lead_Outcome__c" ColumnName="Notes_on_Lead_Outcome__c" />
+          <ScalarProperty Name="Decision_Maker__c" ColumnName="Decision_Maker__c" />
+          <ScalarProperty Name="Timeframe_of_Meeting__c" ColumnName="Timeframe_of_Meeting__c" />
+          <ScalarProperty Name="Meeting_Format__c" ColumnName="Meeting_Format__c" />
+          <ScalarProperty Name="Pain_Point_Identification__c" ColumnName="Pain_Point_Identification__c" />
+          <ScalarProperty Name="Lead_Completeness__c" ColumnName="Lead_Completeness__c" />
+          <ScalarProperty Name="Meeting_Invitation__c" ColumnName="Meeting_Invitation__c" />
+          <ScalarProperty Name="RFI_Request_Type__c" ColumnName="RFI_Request_Type__c" />
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="Probability__c" ColumnName="Probability__c" />
+          <ScalarProperty Name="AR_Sales_1st_Meeting__c" ColumnName="AR_Sales_1st_Meeting__c" />
+          <ScalarProperty Name="AR_Sales_Proposal_Sent__c" ColumnName="AR_Sales_Proposal_Sent__c" />
+          <ScalarProperty Name="AR_Sales_Service_Agreement_Sent__c" ColumnName="AR_Sales_Service_Agreement_Sent__c" />
+          <ScalarProperty Name="AR_Sales_Verbal_Commitment__c" ColumnName="AR_Sales_Verbal_Commitment__c" />
+          <ScalarProperty Name="AR_Sales_Contract_Received__c" ColumnName="AR_Sales_Contract_Received__c" />
+          <ScalarProperty Name="APPOINTMENT_TIME__C" ColumnName="APPOINTMENT_TIME__C" />
+          <ScalarProperty Name="Lead_sharing__c" ColumnName="Lead_sharing__c" />
+          <ScalarProperty Name="Satisfiers_Noted__c" ColumnName="Satisfiers_Noted__c" />
+          <ScalarProperty Name="Painpoints_Noted__c" ColumnName="Painpoints_Noted__c" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

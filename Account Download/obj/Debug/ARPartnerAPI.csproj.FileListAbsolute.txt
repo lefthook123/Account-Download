@@ -1,0 +1,2 @@
+C:\Users\Acceleration Server\Documents\Visual Studio 2012\Projects\Account Download\Account Download\obj\Debug\ARPartnerAPI.csprojResolveAssemblyReference.cache
+C:\Users\Acceleration Server\Documents\Visual Studio 2012\Projects\Account Download\Account Download\obj\Debug\Account Download.exe

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ARSalesforceModel1StoreContainer" CdmEntityContainer="ARSalesforceEntities1">
+    <EntitySetMapping Name="ARContacts">
+      <EntityTypeMapping TypeName="ARSalesforceModel1.ARContact">
+        <MappingFragment StoreEntitySet="ARContacts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Salutation" ColumnName="Salutation" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MailingStreet" ColumnName="MailingStreet" />
+          <ScalarProperty Name="MailingCity" ColumnName="MailingCity" />
+          <ScalarProperty Name="MailingState" ColumnName="MailingState" />
+          <ScalarProperty Name="MailingPostalCode" ColumnName="MailingPostalCode" />
+          <ScalarProperty Name="MailingCountry" ColumnName="MailingCountry" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LeadSource" ColumnName="LeadSource" />
+          <ScalarProperty Name="OwnerId" ColumnName="OwnerId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedById" ColumnName="CreatedById" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedById" ColumnName="LastModifiedById" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          <ScalarProperty Name="LastCURequestDate" ColumnName="LastCURequestDate" />
+          <ScalarProperty Name="LastCUUpdateDate" ColumnName="LastCUUpdateDate" />
+          <ScalarProperty Name="EmailBouncedReason" ColumnName="EmailBouncedReason" />
+          <ScalarProperty Name="EmailBouncedDate" ColumnName="EmailBouncedDate" />
+          <ScalarProperty Name="ConnectionReceivedId" ColumnName="ConnectionReceivedId" />
+          <ScalarProperty Name="ConnectionSentId" ColumnName="ConnectionSentId" />
+          <ScalarProperty Name="Contact_No_Longer_There__c" ColumnName="Contact_No_Longer_There__c" />
+          <ScalarProperty Name="Best_Way_to_ReachL__c" ColumnName="Best_Way_to_ReachL__c" />
+          <ScalarProperty Name="Email_Confirmed__c" ColumnName="Email_Confirmed__c" />
+          <ScalarProperty Name="Admin_Phone__c" ColumnName="Admin_Phone__c" />
+          <ScalarProperty Name="Admin_Name__c" ColumnName="Admin_Name__c" />
+          <ScalarProperty Name="Title__c" ColumnName="Title__c" />
+          <ScalarProperty Name="Duplicate_Contact_REMOVE__c" ColumnName="Duplicate_Contact_REMOVE__c" />
+          <ScalarProperty Name="Contact_Source__c" ColumnName="Contact_Source__c" />
+          <ScalarProperty Name="Contact_Confirmed__c" ColumnName="Contact_Confirmed__c" />
+          <ScalarProperty Name="Last_Marketing_Response__c" ColumnName="Last_Marketing_Response__c" />
+          <ScalarProperty Name="Direct_Mkt_Client_Contact__c" ColumnName="Direct_Mkt_Client_Contact__c" />
+          <ScalarProperty Name="Click_Thru__c" ColumnName="Click_Thru__c" />
+          <ScalarProperty Name="Freq_Response__c" ColumnName="Freq_Response__c" />
+          <ScalarProperty Name="Duplicate__c" ColumnName="Duplicate__c" />
+          <ScalarProperty Name="Note_Heads_up__c" ColumnName="Note_Heads_up__c" />
+          <ScalarProperty Name="RepRegulatoryID" ColumnName="RepRegulatoryID" />
+          <ScalarProperty Name="MAILINGLATITUDE" ColumnName="MAILINGLATITUDE" />
+          <ScalarProperty Name="MAILINGLONGITUDE" ColumnName="MAILINGLONGITUDE" />
+          <ScalarProperty Name="MAIN_DECISION_MAKER__C" ColumnName="MAIN_DECISION_MAKER__C" />
+          <ScalarProperty Name="PRIORITY__C" ColumnName="PRIORITY__C" />
+          <ScalarProperty Name="REPREGULATORYID__C" ColumnName="REPREGULATORYID__C" />
+          <ScalarProperty Name="INSURANCE_LICENSED__C" ColumnName="INSURANCE_LICENSED__C" />
+          <ScalarProperty Name="AUM__C" ColumnName="AUM__C" />
+          <ScalarProperty Name="PRODUCTION__C" ColumnName="PRODUCTION__C" />
+          <ScalarProperty Name="LPL_AGE__C" ColumnName="LPL_AGE__C" />
+          <ScalarProperty Name="LPL_NON_PRODUCER__C" ColumnName="LPL_NON_PRODUCER__C" />
+          <ScalarProperty Name="LICENSES__C" ColumnName="LICENSES__C" />
+          <ScalarProperty Name="LICENSED_SINCE__C" ColumnName="LICENSED_SINCE__C" />
+          <ScalarProperty Name="RETIREMENT_PLAN_ADVISOR__C" ColumnName="RETIREMENT_PLAN_ADVISOR__C" />
+          <ScalarProperty Name="NUMBER_OF_RETIREMENT_PLAN__C" ColumnName="NUMBER_OF_RETIREMENT_PLAN__C" />
+          <ScalarProperty Name="Date_Email_Verified__c" ColumnName="Date_Email_Verified__c" />
+          <ScalarProperty Name="Email_Verification_Rating__c" ColumnName="Email_Verification_Rating__c" />
+          <ScalarProperty Name="BOUNCED_EMAIL__c" ColumnName="BOUNCED_EMAIL__c" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

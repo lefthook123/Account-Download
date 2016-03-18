@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ARSalesforceModel2" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="AROpportunityEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="AROpportunities" EntityType="ARSalesforceModel2.AROpportunity" />
+  </EntityContainer>
+  <EntityType Name="AROpportunity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="AccountId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="StageName" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="CloseDate" Type="DateTime" Precision="3" />
+    <Property Name="LeadSource" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="IsClosed" Type="Boolean" />
+    <Property Name="HasOpportunityLineItem" Type="Boolean" />
+    <Property Name="OwnerId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedById" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedById" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="LastActivityDate" Type="DateTime" Precision="3" />
+    <Property Name="FiscalQuarter" Type="Int32" />
+    <Property Name="FiscalYear" Type="Int32" />
+    <Property Name="Fiscal" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Follow_Up_on_Marketing_Campaign__c" Type="Boolean" />
+    <Property Name="Reason_for_NIGO__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Assets__c" Type="Double" />
+    <Property Name="Participants__c" Type="Double" />
+    <Property Name="Request_for_Information__c" Type="Boolean" />
+    <Property Name="Invoice_Status__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Commission_Status__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Reason_for_Decline_if_applicable__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Client_Oppty_Type__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Plan_Type__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Current_Platform_Services__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Platform_Relationship_Length__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Current_Consultant_Advisor__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Advisor_Relationship_Length__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Plan_Strength_Weakness__c" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Decision_Making_Process__c" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Next_Steps__c" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Opportunity_Type__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Leads_per_month__c" Type="Double" />
+    <Property Name="Opportunity_stage__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Acccount_Type__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Current_Auditor_Relationship_Length__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Payroll__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Client_Manager__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Client_Manager_Phone__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Client_Manager_Email__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Parent_Account__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Appointment_Date__c" Type="DateTime" Precision="3" />
+    <Property Name="PrimaryContact__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Primary_Contact_Phone__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Primary_Contact_Email__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Primary_Contact_Best_Way_to_Reach__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Primary_Contact_Title__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="DB_Plan_Assets__c" Type="Double" />
+    <Property Name="Current_Auditor_Siff_only__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Number_of_Personnel_File_Locations__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Referred_By__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Total_Leads__c" Type="Double" />
+    <Property Name="Notes_on_Lead_Outcome__c" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Decision_Maker__c" Type="Boolean" />
+    <Property Name="Timeframe_of_Meeting__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Meeting_Format__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Pain_Point_Identification__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Lead_Completeness__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Meeting_Invitation__c" Type="Boolean" />
+    <Property Name="RFI_Request_Type__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Account_ID" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Probability__c" Type="Double" />
+    <Property Name="AR_Sales_1st_Meeting__c" Type="DateTime" Precision="3" />
+    <Property Name="AR_Sales_Proposal_Sent__c" Type="DateTime" Precision="3" />
+    <Property Name="AR_Sales_Service_Agreement_Sent__c" Type="DateTime" Precision="3" />
+    <Property Name="AR_Sales_Verbal_Commitment__c" Type="DateTime" Precision="3" />
+    <Property Name="AR_Sales_Contract_Received__c" Type="DateTime" Precision="3" />
+    <Property Name="APPOINTMENT_TIME__C" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Lead_sharing__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Satisfiers_Noted__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Painpoints_Noted__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

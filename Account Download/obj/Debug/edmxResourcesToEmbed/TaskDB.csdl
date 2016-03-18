@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ARSalesforceModel3" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ARTaskEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="ARTasks" EntityType="ARSalesforceModel3.ARTask" />
+  </EntityContainer>
+  <EntityType Name="ARTask">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="WhoId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="WhatId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Subject" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="ActivityDate" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Priority" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="OwnerId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="AccountId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="IsClosed" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedById" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedById" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ReminderDateTime" Type="DateTime" Precision="3" />
+    <Property Name="IsReminderSet" Type="Boolean" />
+    <Property Name="IsRecurrence" Type="Boolean" />
+    <Property Name="Short_Call_Notes__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="CallType__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Contact_Type__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Conversation__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="TimeFrame__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Client_Territories__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ARSalesforceModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ARSalesforceModelStoreContainer">
+    <EntitySet Name="ARAccounts" EntityType="ARSalesforceModel.Store.ARAccounts" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="ARAccounts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="Name" Type="varchar" MaxLength="250" />
+    <Property Name="BillingStreet" Type="varchar" MaxLength="250" />
+    <Property Name="BillingCity" Type="varchar" MaxLength="250" />
+    <Property Name="BillingState" Type="varchar" MaxLength="250" />
+    <Property Name="BillingPostalCode" Type="varchar" MaxLength="250" />
+    <Property Name="Phone" Type="varchar" MaxLength="250" />
+    <Property Name="Website" Type="text" />
+    <Property Name="LastActivityDate" Type="datetime" />
+    <Property Name="Parts__c" Type="float" />
+    <Property Name="Total_assets__c" Type="float" />
+    <Property Name="Industry_Description__c" Type="varchar" MaxLength="250" />
+    <Property Name="Asset_Range_Lower__c" Type="varchar" MaxLength="250" />
+    <Property Name="Asset_Range_Upper__c" Type="varchar" MaxLength="250" />
+    <Property Name="Advisor__c" Type="varchar" MaxLength="250" />
+    <Property Name="Last_Lead_RFI__c" Type="datetime" />
+    <Property Name="Provider_1__c" Type="varchar" MaxLength="250" />
+    <Property Name="Heads_Up__c" Type="text" />
+    <Property Name="YearEstablished__c" Type="varchar" MaxLength="250" />
+    <Property Name="Primary_Contact__c" Type="varchar" MaxLength="250" />
+    <Property Name="Client_Territories__c" Type="varchar" MaxLength="250" />
+    <Property Name="NumDCPlans__c" Type="float" />
+    <Property Name="Status__c" Type="varchar" MaxLength="250" />
+    <Property Name="Federal_ID__c" Type="varchar" MaxLength="250" />
+    <Property Name="Account_Status__c" Type="varchar" MaxLength="250" />
+    <Property Name="Account_Type__c" Type="varchar" MaxLength="250" />
+    <Property Name="Advisor_City__c" Type="varchar" MaxLength="250" />
+    <Property Name="Tier__c" Type="varchar" MaxLength="250" />
+    <Property Name="Advisor_State__c" Type="varchar" MaxLength="250" />
+    <Property Name="Client_Type__c" Type="varchar" MaxLength="250" />
+    <Property Name="Advisor_Zip__c" Type="varchar" MaxLength="250" />
+    <Property Name="Advisor_Email__c" Type="varchar" MaxLength="250" />
+    <Property Name="AdvisorAddress__c" Type="varchar" MaxLength="250" />
+    <Property Name="CRD__c" Type="varchar" MaxLength="255" />
+    <Property Name="X1M_5M__c" Type="float" />
+    <Property Name="X5M_25M__c" Type="float" />
+    <Property Name="X25M_and_Up__c" Type="float" />
+    <Property Name="Industry_Code__c" Type="varchar" MaxLength="50" />
+    <Property Name="Industry_Subsector__c" Type="varchar" MaxLength="255" />
+    <Property Name="PGID__c" Type="varchar" MaxLength="255" />
+    <Property Name="FFID__c" Type="varchar" MaxLength="255" />
+    <Property Name="Monthly_Activity_Reporting__c" Type="bit" />
+    <Property Name="Lead_Distribution_Email_Addresses__c" Type="varchar" MaxLength="255" />
+    <Property Name="Client_Territories_DB__c" Type="varchar" MaxLength="255" />
+    <Property Name="CallListID__c" Type="varchar" MaxLength="255" />
+    <Property Name="Do_Not_Call__c" Type="varchar" MaxLength="255" />
+    <Property Name="Industry_and_Plan_Type__c" Type="varchar" MaxLength="255" />
+    <Property Name="Advisor_Firm_Name__c" Type="varchar" MaxLength="255" />
+    <Property Name="Length_Advisor__c" Type="varchar" MaxLength="255" />
+    <Property Name="Length_Provider__c" Type="varchar" MaxLength="255" />
+    <Property Name="Last_Review_Date__c" Type="datetime" />
+    <Property Name="Date_of_Last_Provider_Change__c" Type="datetime" />
+    <Property Name="DecisionMaker_Identified__c" Type="bit" />
+    <Property Name="Next_RFP_Timing__c" Type="date" />
+    <Property Name="Satisfiers_Noted__c" Type="text" />
+    <Property Name="Painpoints_Noted__c" Type="text" />
+    <Property Name="Date_of_Last_Advisor_Change__c" Type="datetime" />
+    <Property Name="Last_Filing_Year__c" Type="varchar" MaxLength="255" />
+  </EntityType>
+</Schema>

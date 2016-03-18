@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ARSalesforceModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="ARSalesforceModel1StoreContainer">
+          <EntitySet Name="ARContacts" EntityType="ARSalesforceModel1.Store.ARContacts" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="ARContacts">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="AccountId" Type="varchar" MaxLength="250" />
+          <Property Name="LastName" Type="varchar" MaxLength="250" />
+          <Property Name="FirstName" Type="varchar" MaxLength="250" />
+          <Property Name="Salutation" Type="varchar" MaxLength="250" />
+          <Property Name="Name" Type="varchar" MaxLength="250" />
+          <Property Name="MailingStreet" Type="varchar" MaxLength="250" />
+          <Property Name="MailingCity" Type="varchar" MaxLength="250" />
+          <Property Name="MailingState" Type="varchar" MaxLength="250" />
+          <Property Name="MailingPostalCode" Type="varchar" MaxLength="250" />
+          <Property Name="MailingCountry" Type="varchar" MaxLength="250" />
+          <Property Name="Phone" Type="varchar" MaxLength="250" />
+          <Property Name="Fax" Type="varchar" MaxLength="250" />
+          <Property Name="MobilePhone" Type="varchar" MaxLength="250" />
+          <Property Name="Email" Type="varchar" MaxLength="250" />
+          <Property Name="LeadSource" Type="varchar" MaxLength="250" />
+          <Property Name="OwnerId" Type="varchar" MaxLength="255" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="CreatedById" Type="varchar" MaxLength="255" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="LastModifiedById" Type="varchar" MaxLength="255" />
+          <Property Name="LastActivityDate" Type="datetime" />
+          <Property Name="LastCURequestDate" Type="varchar" MaxLength="250" />
+          <Property Name="LastCUUpdateDate" Type="varchar" MaxLength="250" />
+          <Property Name="EmailBouncedReason" Type="varchar" MaxLength="250" />
+          <Property Name="EmailBouncedDate" Type="datetime" />
+          <Property Name="ConnectionReceivedId" Type="varchar" MaxLength="250" />
+          <Property Name="ConnectionSentId" Type="varchar" MaxLength="250" />
+          <Property Name="Contact_No_Longer_There__c" Type="bit" />
+          <Property Name="Best_Way_to_ReachL__c" Type="varchar" MaxLength="250" />
+          <Property Name="Email_Confirmed__c" Type="bit" />
+          <Property Name="Admin_Phone__c" Type="varchar" MaxLength="250" />
+          <Property Name="Admin_Name__c" Type="varchar" MaxLength="250" />
+          <Property Name="Title__c" Type="varchar" MaxLength="250" />
+          <Property Name="Duplicate_Contact_REMOVE__c" Type="bit" />
+          <Property Name="Contact_Source__c" Type="varchar" MaxLength="250" />
+          <Property Name="Contact_Confirmed__c" Type="bit" />
+          <Property Name="Last_Marketing_Response__c" Type="datetime" />
+          <Property Name="Direct_Mkt_Client_Contact__c" Type="varchar" MaxLength="250" />
+          <Property Name="Click_Thru__c" Type="bit" />
+          <Property Name="Freq_Response__c" Type="bit" />
+          <Property Name="Duplicate__c" Type="bit" />
+          <Property Name="Note_Heads_up__c" Type="varchar" MaxLength="250" />
+          <Property Name="RepRegulatoryID" Type="varchar" MaxLength="255" />
+          <Property Name="MAILINGLATITUDE" Type="varchar" MaxLength="255" />
+          <Property Name="MAILINGLONGITUDE" Type="varchar" MaxLength="255" />
+          <Property Name="MAIN_DECISION_MAKER__C" Type="bit" />
+          <Property Name="PRIORITY__C" Type="varchar" MaxLength="255" />
+          <Property Name="REPREGULATORYID__C" Type="varchar" MaxLength="255" />
+          <Property Name="INSURANCE_LICENSED__C" Type="varchar" MaxLength="255" />
+          <Property Name="AUM__C" Type="float" />
+          <Property Name="PRODUCTION__C" Type="float" />
+          <Property Name="LPL_AGE__C" Type="float" />
+          <Property Name="LPL_NON_PRODUCER__C" Type="varchar" MaxLength="255" />
+          <Property Name="LICENSES__C" Type="varchar" MaxLength="255" />
+          <Property Name="LICENSED_SINCE__C" Type="varchar" MaxLength="255" />
+          <Property Name="RETIREMENT_PLAN_ADVISOR__C" Type="bit" />
+          <Property Name="NUMBER_OF_RETIREMENT_PLAN__C" Type="float" />
+          <Property Name="Date_Email_Verified__c" Type="nchar" MaxLength="100" />
+          <Property Name="Email_Verification_Rating__c" Type="nchar" MaxLength="10" />
+          <Property Name="BOUNCED_EMAIL__c" Type="varchar" MaxLength="255" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ARSalesforceModel1" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="ARSalesforceEntities1" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="ARContacts" EntityType="ARSalesforceModel1.ARContact" />
+        </EntityContainer>
+        <EntityType Name="ARContact">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="AccountId" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="LastName" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="FirstName" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Salutation" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Name" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="MailingStreet" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="MailingCity" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="MailingState" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="MailingPostalCode" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="MailingCountry" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Phone" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Fax" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="MobilePhone" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="LeadSource" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="OwnerId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedById" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="LastModifiedById" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="LastActivityDate" Type="DateTime" Precision="3" />
+          <Property Name="LastCURequestDate" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="LastCUUpdateDate" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="EmailBouncedReason" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="EmailBouncedDate" Type="DateTime" Precision="3" />
+          <Property Name="ConnectionReceivedId" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="ConnectionSentId" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Contact_No_Longer_There__c" Type="Boolean" />
+          <Property Name="Best_Way_to_ReachL__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Email_Confirmed__c" Type="Boolean" />
+          <Property Name="Admin_Phone__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Admin_Name__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Title__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Duplicate_Contact_REMOVE__c" Type="Boolean" />
+          <Property Name="Contact_Source__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Contact_Confirmed__c" Type="Boolean" />
+          <Property Name="Last_Marketing_Response__c" Type="DateTime" Precision="3" />
+          <Property Name="Direct_Mkt_Client_Contact__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Click_Thru__c" Type="Boolean" />
+          <Property Name="Freq_Response__c" Type="Boolean" />
+          <Property Name="Duplicate__c" Type="Boolean" />
+          <Property Name="Note_Heads_up__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="RepRegulatoryID" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="MAILINGLATITUDE" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="MAILINGLONGITUDE" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="MAIN_DECISION_MAKER__C" Type="Boolean" />
+          <Property Name="PRIORITY__C" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="REPREGULATORYID__C" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="INSURANCE_LICENSED__C" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="AUM__C" Type="Double" />
+          <Property Name="PRODUCTION__C" Type="Double" />
+          <Property Name="LPL_AGE__C" Type="Double" />
+          <Property Name="LPL_NON_PRODUCER__C" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="LICENSES__C" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="LICENSED_SINCE__C" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="RETIREMENT_PLAN_ADVISOR__C" Type="Boolean" />
+          <Property Name="NUMBER_OF_RETIREMENT_PLAN__C" Type="Double" />
+          <Property Name="Date_Email_Verified__c" Type="String" MaxLength="100" Unicode="true" FixedLength="true" />
+          <Property Name="Email_Verification_Rating__c" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="BOUNCED_EMAIL__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ARSalesforceModel1StoreContainer" CdmEntityContainer="ARSalesforceEntities1">
+          <EntitySetMapping Name="ARContacts">
+            <EntityTypeMapping TypeName="ARSalesforceModel1.ARContact">
+              <MappingFragment StoreEntitySet="ARContacts">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="Salutation" ColumnName="Salutation" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="MailingStreet" ColumnName="MailingStreet" />
+                <ScalarProperty Name="MailingCity" ColumnName="MailingCity" />
+                <ScalarProperty Name="MailingState" ColumnName="MailingState" />
+                <ScalarProperty Name="MailingPostalCode" ColumnName="MailingPostalCode" />
+                <ScalarProperty Name="MailingCountry" ColumnName="MailingCountry" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="LeadSource" ColumnName="LeadSource" />
+                <ScalarProperty Name="OwnerId" ColumnName="OwnerId" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedById" ColumnName="CreatedById" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="LastModifiedById" ColumnName="LastModifiedById" />
+                <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+                <ScalarProperty Name="LastCURequestDate" ColumnName="LastCURequestDate" />
+                <ScalarProperty Name="LastCUUpdateDate" ColumnName="LastCUUpdateDate" />
+                <ScalarProperty Name="EmailBouncedReason" ColumnName="EmailBouncedReason" />
+                <ScalarProperty Name="EmailBouncedDate" ColumnName="EmailBouncedDate" />
+                <ScalarProperty Name="ConnectionReceivedId" ColumnName="ConnectionReceivedId" />
+                <ScalarProperty Name="ConnectionSentId" ColumnName="ConnectionSentId" />
+                <ScalarProperty Name="Contact_No_Longer_There__c" ColumnName="Contact_No_Longer_There__c" />
+                <ScalarProperty Name="Best_Way_to_ReachL__c" ColumnName="Best_Way_to_ReachL__c" />
+                <ScalarProperty Name="Email_Confirmed__c" ColumnName="Email_Confirmed__c" />
+                <ScalarProperty Name="Admin_Phone__c" ColumnName="Admin_Phone__c" />
+                <ScalarProperty Name="Admin_Name__c" ColumnName="Admin_Name__c" />
+                <ScalarProperty Name="Title__c" ColumnName="Title__c" />
+                <ScalarProperty Name="Duplicate_Contact_REMOVE__c" ColumnName="Duplicate_Contact_REMOVE__c" />
+                <ScalarProperty Name="Contact_Source__c" ColumnName="Contact_Source__c" />
+                <ScalarProperty Name="Contact_Confirmed__c" ColumnName="Contact_Confirmed__c" />
+                <ScalarProperty Name="Last_Marketing_Response__c" ColumnName="Last_Marketing_Response__c" />
+                <ScalarProperty Name="Direct_Mkt_Client_Contact__c" ColumnName="Direct_Mkt_Client_Contact__c" />
+                <ScalarProperty Name="Click_Thru__c" ColumnName="Click_Thru__c" />
+                <ScalarProperty Name="Freq_Response__c" ColumnName="Freq_Response__c" />
+                <ScalarProperty Name="Duplicate__c" ColumnName="Duplicate__c" />
+                <ScalarProperty Name="Note_Heads_up__c" ColumnName="Note_Heads_up__c" />
+                <ScalarProperty Name="RepRegulatoryID" ColumnName="RepRegulatoryID" />
+                <ScalarProperty Name="MAILINGLATITUDE" ColumnName="MAILINGLATITUDE" />
+                <ScalarProperty Name="MAILINGLONGITUDE" ColumnName="MAILINGLONGITUDE" />
+                <ScalarProperty Name="MAIN_DECISION_MAKER__C" ColumnName="MAIN_DECISION_MAKER__C" />
+                <ScalarProperty Name="PRIORITY__C" ColumnName="PRIORITY__C" />
+                <ScalarProperty Name="REPREGULATORYID__C" ColumnName="REPREGULATORYID__C" />
+                <ScalarProperty Name="INSURANCE_LICENSED__C" ColumnName="INSURANCE_LICENSED__C" />
+                <ScalarProperty Name="AUM__C" ColumnName="AUM__C" />
+                <ScalarProperty Name="PRODUCTION__C" ColumnName="PRODUCTION__C" />
+                <ScalarProperty Name="LPL_AGE__C" ColumnName="LPL_AGE__C" />
+                <ScalarProperty Name="LPL_NON_PRODUCER__C" ColumnName="LPL_NON_PRODUCER__C" />
+                <ScalarProperty Name="LICENSES__C" ColumnName="LICENSES__C" />
+                <ScalarProperty Name="LICENSED_SINCE__C" ColumnName="LICENSED_SINCE__C" />
+                <ScalarProperty Name="RETIREMENT_PLAN_ADVISOR__C" ColumnName="RETIREMENT_PLAN_ADVISOR__C" />
+                <ScalarProperty Name="NUMBER_OF_RETIREMENT_PLAN__C" ColumnName="NUMBER_OF_RETIREMENT_PLAN__C" />
+                <ScalarProperty Name="Date_Email_Verified__c" ColumnName="Date_Email_Verified__c" />
+                <ScalarProperty Name="Email_Verification_Rating__c" ColumnName="Email_Verification_Rating__c" />
+                <ScalarProperty Name="BOUNCED_EMAIL__c" ColumnName="BOUNCED_EMAIL__c" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ARSalesforceModel2.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ARSalesforceModel2StoreContainer">
+    <EntitySet Name="AROpportunities" EntityType="ARSalesforceModel2.Store.AROpportunities" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="AROpportunities">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="AccountId" Type="varchar" MaxLength="255" />
+    <Property Name="Name" Type="varchar" MaxLength="250" />
+    <Property Name="Description" Type="text" />
+    <Property Name="StageName" Type="varchar" MaxLength="250" />
+    <Property Name="CloseDate" Type="datetime" />
+    <Property Name="LeadSource" Type="varchar" MaxLength="250" />
+    <Property Name="IsClosed" Type="bit" />
+    <Property Name="HasOpportunityLineItem" Type="bit" />
+    <Property Name="OwnerId" Type="varchar" MaxLength="255" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreatedById" Type="varchar" MaxLength="255" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="LastModifiedById" Type="varchar" MaxLength="250" />
+    <Property Name="LastActivityDate" Type="datetime" />
+    <Property Name="FiscalQuarter" Type="int" />
+    <Property Name="FiscalYear" Type="int" />
+    <Property Name="Fiscal" Type="varchar" MaxLength="250" />
+    <Property Name="Follow_Up_on_Marketing_Campaign__c" Type="bit" />
+    <Property Name="Reason_for_NIGO__c" Type="varchar" MaxLength="250" />
+    <Property Name="Assets__c" Type="float" />
+    <Property Name="Participants__c" Type="float" />
+    <Property Name="Request_for_Information__c" Type="bit" />
+    <Property Name="Invoice_Status__c" Type="varchar" MaxLength="250" />
+    <Property Name="Commission_Status__c" Type="varchar" MaxLength="250" />
+    <Property Name="Reason_for_Decline_if_applicable__c" Type="varchar" MaxLength="250" />
+    <Property Name="Client_Oppty_Type__c" Type="varchar" MaxLength="250" />
+    <Property Name="Plan_Type__c" Type="varchar" MaxLength="250" />
+    <Property Name="Current_Platform_Services__c" Type="varchar" MaxLength="250" />
+    <Property Name="Platform_Relationship_Length__c" Type="varchar" MaxLength="250" />
+    <Property Name="Current_Consultant_Advisor__c" Type="varchar" MaxLength="250" />
+    <Property Name="Advisor_Relationship_Length__c" Type="varchar" MaxLength="250" />
+    <Property Name="Plan_Strength_Weakness__c" Type="text" />
+    <Property Name="Decision_Making_Process__c" Type="text" />
+    <Property Name="Next_Steps__c" Type="text" />
+    <Property Name="Opportunity_Type__c" Type="varchar" MaxLength="250" />
+    <Property Name="Leads_per_month__c" Type="float" />
+    <Property Name="Opportunity_stage__c" Type="varchar" MaxLength="250" />
+    <Property Name="Acccount_Type__c" Type="varchar" MaxLength="250" />
+    <Property Name="Current_Auditor_Relationship_Length__c" Type="varchar" MaxLength="250" />
+    <Property Name="Payroll__c" Type="varchar" MaxLength="250" />
+    <Property Name="Client_Manager__c" Type="varchar" MaxLength="250" />
+    <Property Name="Client_Manager_Phone__c" Type="varchar" MaxLength="250" />
+    <Property Name="Client_Manager_Email__c" Type="varchar" MaxLength="250" />
+    <Property Name="Parent_Account__c" Type="varchar" MaxLength="255" />
+    <Property Name="Appointment_Date__c" Type="datetime" />
+    <Property Name="PrimaryContact__c" Type="varchar" MaxLength="255" />
+    <Property Name="Primary_Contact_Phone__c" Type="varchar" MaxLength="250" />
+    <Property Name="Primary_Contact_Email__c" Type="varchar" MaxLength="250" />
+    <Property Name="Primary_Contact_Best_Way_to_Reach__c" Type="varchar" MaxLength="250" />
+    <Property Name="Primary_Contact_Title__c" Type="varchar" MaxLength="250" />
+    <Property Name="DB_Plan_Assets__c" Type="float" />
+    <Property Name="Current_Auditor_Siff_only__c" Type="varchar" MaxLength="250" />
+    <Property Name="Number_of_Personnel_File_Locations__c" Type="varchar" MaxLength="250" />
+    <Property Name="Referred_By__c" Type="varchar" MaxLength="250" />
+    <Property Name="Total_Leads__c" Type="float" />
+    <Property Name="Notes_on_Lead_Outcome__c" Type="text" />
+    <Property Name="Decision_Maker__c" Type="bit" />
+    <Property Name="Timeframe_of_Meeting__c" Type="varchar" MaxLength="250" />
+    <Property Name="Meeting_Format__c" Type="varchar" MaxLength="250" />
+    <Property Name="Pain_Point_Identification__c" Type="varchar" MaxLength="250" />
+    <Property Name="Lead_Completeness__c" Type="varchar" MaxLength="250" />
+    <Property Name="Meeting_Invitation__c" Type="bit" />
+    <Property Name="RFI_Request_Type__c" Type="varchar" MaxLength="250" />
+    <Property Name="Account_ID" Type="varchar" MaxLength="255" />
+    <Property Name="Probability__c" Type="float" />
+    <Property Name="AR_Sales_1st_Meeting__c" Type="datetime" />
+    <Property Name="AR_Sales_Proposal_Sent__c" Type="datetime" />
+    <Property Name="AR_Sales_Service_Agreement_Sent__c" Type="datetime" />
+    <Property Name="AR_Sales_Verbal_Commitment__c" Type="datetime" />
+    <Property Name="AR_Sales_Contract_Received__c" Type="datetime" />
+    <Property Name="APPOINTMENT_TIME__C" Type="varchar" MaxLength="255" />
+    <Property Name="Lead_sharing__c" Type="varchar" MaxLength="255" />
+    <Property Name="Satisfiers_Noted__c" Type="varchar" MaxLength="255" />
+    <Property Name="Painpoints_Noted__c" Type="varchar" MaxLength="255" />
+  </EntityType>
+</Schema>

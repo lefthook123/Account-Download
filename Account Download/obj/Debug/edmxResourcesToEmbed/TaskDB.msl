@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ARSalesforceModel3StoreContainer" CdmEntityContainer="ARTaskEntities">
+    <EntitySetMapping Name="ARTasks">
+      <EntityTypeMapping TypeName="ARSalesforceModel3.ARTask">
+        <MappingFragment StoreEntitySet="ARTasks">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WhoId" ColumnName="WhoId" />
+          <ScalarProperty Name="WhatId" ColumnName="WhatId" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="ActivityDate" ColumnName="ActivityDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="OwnerId" ColumnName="OwnerId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+          <ScalarProperty Name="IsClosed" ColumnName="IsClosed" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedById" ColumnName="CreatedById" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedById" ColumnName="LastModifiedById" />
+          <ScalarProperty Name="ReminderDateTime" ColumnName="ReminderDateTime" />
+          <ScalarProperty Name="IsReminderSet" ColumnName="IsReminderSet" />
+          <ScalarProperty Name="IsRecurrence" ColumnName="IsRecurrence" />
+          <ScalarProperty Name="Short_Call_Notes__c" ColumnName="Short_Call_Notes__c" />
+          <ScalarProperty Name="CallType__c" ColumnName="CallType__c" />
+          <ScalarProperty Name="Contact_Type__c" ColumnName="Contact_Type__c" />
+          <ScalarProperty Name="Conversation__c" ColumnName="Conversation__c" />
+          <ScalarProperty Name="TimeFrame__c" ColumnName="TimeFrame__c" />
+          <ScalarProperty Name="Client_Territories__c" ColumnName="Client_Territories__c" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

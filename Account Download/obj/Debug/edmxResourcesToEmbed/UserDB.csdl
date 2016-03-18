@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ARSalesforceModel4" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ARUserEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="ARUsers" EntityType="ARSalesforceModel4.ARUser" />
+  </EntityContainer>
+  <EntityType Name="ARUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Username" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="FirstName" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="FullName" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

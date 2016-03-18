@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ARSalesforceModel1" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ARSalesforceEntities1" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="ARContacts" EntityType="ARSalesforceModel1.ARContact" />
+  </EntityContainer>
+  <EntityType Name="ARContact">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="AccountId" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="FirstName" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Salutation" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="MailingStreet" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="MailingCity" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="MailingState" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="MailingPostalCode" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="MailingCountry" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Fax" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="MobilePhone" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="LeadSource" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="OwnerId" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedById" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedById" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="LastActivityDate" Type="DateTime" Precision="3" />
+    <Property Name="LastCURequestDate" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="LastCUUpdateDate" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="EmailBouncedReason" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="EmailBouncedDate" Type="DateTime" Precision="3" />
+    <Property Name="ConnectionReceivedId" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="ConnectionSentId" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Contact_No_Longer_There__c" Type="Boolean" />
+    <Property Name="Best_Way_to_ReachL__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Email_Confirmed__c" Type="Boolean" />
+    <Property Name="Admin_Phone__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Admin_Name__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Title__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Duplicate_Contact_REMOVE__c" Type="Boolean" />
+    <Property Name="Contact_Source__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Contact_Confirmed__c" Type="Boolean" />
+    <Property Name="Last_Marketing_Response__c" Type="DateTime" Precision="3" />
+    <Property Name="Direct_Mkt_Client_Contact__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Click_Thru__c" Type="Boolean" />
+    <Property Name="Freq_Response__c" Type="Boolean" />
+    <Property Name="Duplicate__c" Type="Boolean" />
+    <Property Name="Note_Heads_up__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="RepRegulatoryID" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="MAILINGLATITUDE" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="MAILINGLONGITUDE" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="MAIN_DECISION_MAKER__C" Type="Boolean" />
+    <Property Name="PRIORITY__C" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="REPREGULATORYID__C" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="INSURANCE_LICENSED__C" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="AUM__C" Type="Double" />
+    <Property Name="PRODUCTION__C" Type="Double" />
+    <Property Name="LPL_AGE__C" Type="Double" />
+    <Property Name="LPL_NON_PRODUCER__C" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="LICENSES__C" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="LICENSED_SINCE__C" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="RETIREMENT_PLAN_ADVISOR__C" Type="Boolean" />
+    <Property Name="NUMBER_OF_RETIREMENT_PLAN__C" Type="Double" />
+    <Property Name="Date_Email_Verified__c" Type="String" MaxLength="100" Unicode="true" FixedLength="true" />
+    <Property Name="Email_Verification_Rating__c" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="BOUNCED_EMAIL__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

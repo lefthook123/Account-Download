@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ARSalesforceModel3.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ARSalesforceModel3StoreContainer">
+    <EntitySet Name="ARTasks" EntityType="ARSalesforceModel3.Store.ARTasks" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="ARTasks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="WhoId" Type="varchar" MaxLength="255" />
+    <Property Name="WhatId" Type="varchar" MaxLength="255" />
+    <Property Name="Subject" Type="varchar" MaxLength="250" />
+    <Property Name="ActivityDate" Type="datetime" />
+    <Property Name="Status" Type="varchar" MaxLength="250" />
+    <Property Name="Priority" Type="varchar" MaxLength="250" />
+    <Property Name="OwnerId" Type="varchar" MaxLength="255" />
+    <Property Name="Description" Type="text" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="AccountId" Type="varchar" MaxLength="255" />
+    <Property Name="IsClosed" Type="bit" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreatedById" Type="varchar" MaxLength="255" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="LastModifiedById" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="ReminderDateTime" Type="datetime" />
+    <Property Name="IsReminderSet" Type="bit" />
+    <Property Name="IsRecurrence" Type="bit" />
+    <Property Name="Short_Call_Notes__c" Type="varchar" MaxLength="250" />
+    <Property Name="CallType__c" Type="varchar" MaxLength="250" />
+    <Property Name="Contact_Type__c" Type="varchar" MaxLength="250" />
+    <Property Name="Conversation__c" Type="varchar" MaxLength="250" />
+    <Property Name="TimeFrame__c" Type="varchar" MaxLength="250" />
+    <Property Name="Client_Territories__c" Type="varchar" MaxLength="250" />
+  </EntityType>
+</Schema>

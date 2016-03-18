@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ARSalesforceModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ARSalesforceModel1StoreContainer">
+    <EntitySet Name="ARContacts" EntityType="ARSalesforceModel1.Store.ARContacts" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="ARContacts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="AccountId" Type="varchar" MaxLength="250" />
+    <Property Name="LastName" Type="varchar" MaxLength="250" />
+    <Property Name="FirstName" Type="varchar" MaxLength="250" />
+    <Property Name="Salutation" Type="varchar" MaxLength="250" />
+    <Property Name="Name" Type="varchar" MaxLength="250" />
+    <Property Name="MailingStreet" Type="varchar" MaxLength="250" />
+    <Property Name="MailingCity" Type="varchar" MaxLength="250" />
+    <Property Name="MailingState" Type="varchar" MaxLength="250" />
+    <Property Name="MailingPostalCode" Type="varchar" MaxLength="250" />
+    <Property Name="MailingCountry" Type="varchar" MaxLength="250" />
+    <Property Name="Phone" Type="varchar" MaxLength="250" />
+    <Property Name="Fax" Type="varchar" MaxLength="250" />
+    <Property Name="MobilePhone" Type="varchar" MaxLength="250" />
+    <Property Name="Email" Type="varchar" MaxLength="250" />
+    <Property Name="LeadSource" Type="varchar" MaxLength="250" />
+    <Property Name="OwnerId" Type="varchar" MaxLength="255" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreatedById" Type="varchar" MaxLength="255" />
+    <Property Name="LastModifiedDate" Type="datetime" />
+    <Property Name="LastModifiedById" Type="varchar" MaxLength="255" />
+    <Property Name="LastActivityDate" Type="datetime" />
+    <Property Name="LastCURequestDate" Type="varchar" MaxLength="250" />
+    <Property Name="LastCUUpdateDate" Type="varchar" MaxLength="250" />
+    <Property Name="EmailBouncedReason" Type="varchar" MaxLength="250" />
+    <Property Name="EmailBouncedDate" Type="datetime" />
+    <Property Name="ConnectionReceivedId" Type="varchar" MaxLength="250" />
+    <Property Name="ConnectionSentId" Type="varchar" MaxLength="250" />
+    <Property Name="Contact_No_Longer_There__c" Type="bit" />
+    <Property Name="Best_Way_to_ReachL__c" Type="varchar" MaxLength="250" />
+    <Property Name="Email_Confirmed__c" Type="bit" />
+    <Property Name="Admin_Phone__c" Type="varchar" MaxLength="250" />
+    <Property Name="Admin_Name__c" Type="varchar" MaxLength="250" />
+    <Property Name="Title__c" Type="varchar" MaxLength="250" />
+    <Property Name="Duplicate_Contact_REMOVE__c" Type="bit" />
+    <Property Name="Contact_Source__c" Type="varchar" MaxLength="250" />
+    <Property Name="Contact_Confirmed__c" Type="bit" />
+    <Property Name="Last_Marketing_Response__c" Type="datetime" />
+    <Property Name="Direct_Mkt_Client_Contact__c" Type="varchar" MaxLength="250" />
+    <Property Name="Click_Thru__c" Type="bit" />
+    <Property Name="Freq_Response__c" Type="bit" />
+    <Property Name="Duplicate__c" Type="bit" />
+    <Property Name="Note_Heads_up__c" Type="varchar" MaxLength="250" />
+    <Property Name="RepRegulatoryID" Type="varchar" MaxLength="255" />
+    <Property Name="MAILINGLATITUDE" Type="varchar" MaxLength="255" />
+    <Property Name="MAILINGLONGITUDE" Type="varchar" MaxLength="255" />
+    <Property Name="MAIN_DECISION_MAKER__C" Type="bit" />
+    <Property Name="PRIORITY__C" Type="varchar" MaxLength="255" />
+    <Property Name="REPREGULATORYID__C" Type="varchar" MaxLength="255" />
+    <Property Name="INSURANCE_LICENSED__C" Type="varchar" MaxLength="255" />
+    <Property Name="AUM__C" Type="float" />
+    <Property Name="PRODUCTION__C" Type="float" />
+    <Property Name="LPL_AGE__C" Type="float" />
+    <Property Name="LPL_NON_PRODUCER__C" Type="varchar" MaxLength="255" />
+    <Property Name="LICENSES__C" Type="varchar" MaxLength="255" />
+    <Property Name="LICENSED_SINCE__C" Type="varchar" MaxLength="255" />
+    <Property Name="RETIREMENT_PLAN_ADVISOR__C" Type="bit" />
+    <Property Name="NUMBER_OF_RETIREMENT_PLAN__C" Type="float" />
+    <Property Name="Date_Email_Verified__c" Type="nchar" MaxLength="100" />
+    <Property Name="Email_Verification_Rating__c" Type="nchar" MaxLength="10" />
+    <Property Name="BOUNCED_EMAIL__c" Type="varchar" MaxLength="255" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ARSalesforceModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="ARSalesforceModelStoreContainer">
+          <EntitySet Name="ARAccounts" EntityType="ARSalesforceModel.Store.ARAccounts" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="ARAccounts">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="Name" Type="varchar" MaxLength="250" />
+          <Property Name="BillingStreet" Type="varchar" MaxLength="250" />
+          <Property Name="BillingCity" Type="varchar" MaxLength="250" />
+          <Property Name="BillingState" Type="varchar" MaxLength="250" />
+          <Property Name="BillingPostalCode" Type="varchar" MaxLength="250" />
+          <Property Name="Phone" Type="varchar" MaxLength="250" />
+          <Property Name="Website" Type="text" />
+          <Property Name="LastActivityDate" Type="datetime" />
+          <Property Name="Parts__c" Type="float" />
+          <Property Name="Total_assets__c" Type="float" />
+          <Property Name="Industry_Description__c" Type="varchar" MaxLength="250" />
+          <Property Name="Asset_Range_Lower__c" Type="varchar" MaxLength="250" />
+          <Property Name="Asset_Range_Upper__c" Type="varchar" MaxLength="250" />
+          <Property Name="Advisor__c" Type="varchar" MaxLength="250" />
+          <Property Name="Last_Lead_RFI__c" Type="datetime" />
+          <Property Name="Provider_1__c" Type="varchar" MaxLength="250" />
+          <Property Name="Heads_Up__c" Type="text" />
+          <Property Name="YearEstablished__c" Type="varchar" MaxLength="250" />
+          <Property Name="Primary_Contact__c" Type="varchar" MaxLength="250" />
+          <Property Name="Client_Territories__c" Type="varchar" MaxLength="250" />
+          <Property Name="NumDCPlans__c" Type="float" />
+          <Property Name="Status__c" Type="varchar" MaxLength="250" />
+          <Property Name="Federal_ID__c" Type="varchar" MaxLength="250" />
+          <Property Name="Account_Status__c" Type="varchar" MaxLength="250" />
+          <Property Name="Account_Type__c" Type="varchar" MaxLength="250" />
+          <Property Name="Advisor_City__c" Type="varchar" MaxLength="250" />
+          <Property Name="Tier__c" Type="varchar" MaxLength="250" />
+          <Property Name="Advisor_State__c" Type="varchar" MaxLength="250" />
+          <Property Name="Client_Type__c" Type="varchar" MaxLength="250" />
+          <Property Name="Advisor_Zip__c" Type="varchar" MaxLength="250" />
+          <Property Name="Advisor_Email__c" Type="varchar" MaxLength="250" />
+          <Property Name="AdvisorAddress__c" Type="varchar" MaxLength="250" />
+          <Property Name="CRD__c" Type="varchar" MaxLength="255" />
+          <Property Name="X1M_5M__c" Type="float" />
+          <Property Name="X5M_25M__c" Type="float" />
+          <Property Name="X25M_and_Up__c" Type="float" />
+          <Property Name="Industry_Code__c" Type="varchar" MaxLength="50" />
+          <Property Name="Industry_Subsector__c" Type="varchar" MaxLength="255" />
+          <Property Name="PGID__c" Type="varchar" MaxLength="255" />
+          <Property Name="FFID__c" Type="varchar" MaxLength="255" />
+          <Property Name="Monthly_Activity_Reporting__c" Type="bit" />
+          <Property Name="Lead_Distribution_Email_Addresses__c" Type="varchar" MaxLength="255" />
+          <Property Name="Client_Territories_DB__c" Type="varchar" MaxLength="255" />
+          <Property Name="CallListID__c" Type="varchar" MaxLength="255" />
+          <Property Name="Do_Not_Call__c" Type="varchar" MaxLength="255" />
+          <Property Name="Industry_and_Plan_Type__c" Type="varchar" MaxLength="255" />
+          <Property Name="Advisor_Firm_Name__c" Type="varchar" MaxLength="255" />
+          <Property Name="Length_Advisor__c" Type="varchar" MaxLength="255" />
+          <Property Name="Length_Provider__c" Type="varchar" MaxLength="255" />
+          <Property Name="Last_Review_Date__c" Type="datetime" />
+          <Property Name="Date_of_Last_Provider_Change__c" Type="datetime" />
+          <Property Name="DecisionMaker_Identified__c" Type="bit" />
+          <Property Name="Next_RFP_Timing__c" Type="date" />
+          <Property Name="Satisfiers_Noted__c" Type="text" />
+          <Property Name="Painpoints_Noted__c" Type="text" />
+          <Property Name="Date_of_Last_Advisor_Change__c" Type="datetime" />
+          <Property Name="Last_Filing_Year__c" Type="varchar" MaxLength="255" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ARSalesforceModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="ARSalesforceEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="ARAccounts" EntityType="ARSalesforceModel.ARAccount" />
+        </EntityContainer>
+        <EntityType Name="ARAccount">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="Name" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="BillingStreet" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="BillingCity" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="BillingState" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="BillingPostalCode" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Phone" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Website" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="LastActivityDate" Type="DateTime" Precision="3" />
+          <Property Name="Parts__c" Type="Double" />
+          <Property Name="Total_assets__c" Type="Double" />
+          <Property Name="Industry_Description__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Asset_Range_Lower__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Asset_Range_Upper__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Advisor__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Last_Lead_RFI__c" Type="DateTime" Precision="3" />
+          <Property Name="Provider_1__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Heads_Up__c" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="YearEstablished__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Primary_Contact__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Client_Territories__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="NumDCPlans__c" Type="Double" />
+          <Property Name="Status__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Federal_ID__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Account_Status__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Account_Type__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Advisor_City__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Tier__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Advisor_State__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Client_Type__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Advisor_Zip__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Advisor_Email__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="AdvisorAddress__c" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="CRD__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="X1M_5M__c" Type="Double" />
+          <Property Name="X5M_25M__c" Type="Double" />
+          <Property Name="X25M_and_Up__c" Type="Double" />
+          <Property Name="Industry_Code__c" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Industry_Subsector__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="PGID__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="FFID__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Monthly_Activity_Reporting__c" Type="Boolean" />
+          <Property Name="Lead_Distribution_Email_Addresses__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Client_Territories_DB__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="CallListID__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Do_Not_Call__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Industry_and_Plan_Type__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Advisor_Firm_Name__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Length_Advisor__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Length_Provider__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Last_Review_Date__c" Type="DateTime" Precision="3" />
+          <Property Name="Date_of_Last_Provider_Change__c" Type="DateTime" Precision="3" />
+          <Property Name="DecisionMaker_Identified__c" Type="Boolean" />
+          <Property Name="Next_RFP_Timing__c" Type="DateTime" Precision="0" />
+          <Property Name="Satisfiers_Noted__c" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Painpoints_Noted__c" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Date_of_Last_Advisor_Change__c" Type="DateTime" Precision="3" />
+          <Property Name="Last_Filing_Year__c" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ARSalesforceModelStoreContainer" CdmEntityContainer="ARSalesforceEntities">
+          <EntitySetMapping Name="ARAccounts">
+            <EntityTypeMapping TypeName="ARSalesforceModel.ARAccount">
+              <MappingFragment StoreEntitySet="ARAccounts">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="BillingStreet" ColumnName="BillingStreet" />
+                <ScalarProperty Name="BillingCity" ColumnName="BillingCity" />
+                <ScalarProperty Name="BillingState" ColumnName="BillingState" />
+                <ScalarProperty Name="BillingPostalCode" ColumnName="BillingPostalCode" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+                <ScalarProperty Name="Parts__c" ColumnName="Parts__c" />
+                <ScalarProperty Name="Total_assets__c" ColumnName="Total_assets__c" />
+                <ScalarProperty Name="Industry_Description__c" ColumnName="Industry_Description__c" />
+                <ScalarProperty Name="Asset_Range_Lower__c" ColumnName="Asset_Range_Lower__c" />
+                <ScalarProperty Name="Asset_Range_Upper__c" ColumnName="Asset_Range_Upper__c" />
+                <ScalarProperty Name="Advisor__c" ColumnName="Advisor__c" />
+                <ScalarProperty Name="Last_Lead_RFI__c" ColumnName="Last_Lead_RFI__c" />
+                <ScalarProperty Name="Provider_1__c" ColumnName="Provider_1__c" />
+                <ScalarProperty Name="Heads_Up__c" ColumnName="Heads_Up__c" />
+                <ScalarProperty Name="YearEstablished__c" ColumnName="YearEstablished__c" />
+                <ScalarProperty Name="Primary_Contact__c" ColumnName="Primary_Contact__c" />
+                <ScalarProperty Name="Client_Territories__c" ColumnName="Client_Territories__c" />
+                <ScalarProperty Name="NumDCPlans__c" ColumnName="NumDCPlans__c" />
+                <ScalarProperty Name="Status__c" ColumnName="Status__c" />
+                <ScalarProperty Name="Federal_ID__c" ColumnName="Federal_ID__c" />
+                <ScalarProperty Name="Account_Status__c" ColumnName="Account_Status__c" />
+                <ScalarProperty Name="Account_Type__c" ColumnName="Account_Type__c" />
+                <ScalarProperty Name="Advisor_City__c" ColumnName="Advisor_City__c" />
+                <ScalarProperty Name="Tier__c" ColumnName="Tier__c" />
+                <ScalarProperty Name="Advisor_State__c" ColumnName="Advisor_State__c" />
+                <ScalarProperty Name="Client_Type__c" ColumnName="Client_Type__c" />
+                <ScalarProperty Name="Advisor_Zip__c" ColumnName="Advisor_Zip__c" />
+                <ScalarProperty Name="Advisor_Email__c" ColumnName="Advisor_Email__c" />
+                <ScalarProperty Name="AdvisorAddress__c" ColumnName="AdvisorAddress__c" />
+                <ScalarProperty Name="CRD__c" ColumnName="CRD__c" />
+                <ScalarProperty Name="X1M_5M__c" ColumnName="X1M_5M__c" />
+                <ScalarProperty Name="X5M_25M__c" ColumnName="X5M_25M__c" />
+                <ScalarProperty Name="X25M_and_Up__c" ColumnName="X25M_and_Up__c" />
+                <ScalarProperty Name="Industry_Code__c" ColumnName="Industry_Code__c" />
+                <ScalarProperty Name="Industry_Subsector__c" ColumnName="Industry_Subsector__c" />
+                <ScalarProperty Name="PGID__c" ColumnName="PGID__c" />
+                <ScalarProperty Name="FFID__c" ColumnName="FFID__c" />
+                <ScalarProperty Name="Monthly_Activity_Reporting__c" ColumnName="Monthly_Activity_Reporting__c" />
+                <ScalarProperty Name="Lead_Distribution_Email_Addresses__c" ColumnName="Lead_Distribution_Email_Addresses__c" />
+                <ScalarProperty Name="Client_Territories_DB__c" ColumnName="Client_Territories_DB__c" />
+                <ScalarProperty Name="CallListID__c" ColumnName="CallListID__c" />
+                <ScalarProperty Name="Do_Not_Call__c" ColumnName="Do_Not_Call__c" />
+                <ScalarProperty Name="Industry_and_Plan_Type__c" ColumnName="Industry_and_Plan_Type__c" />
+                <ScalarProperty Name="Advisor_Firm_Name__c" ColumnName="Advisor_Firm_Name__c" />
+                <ScalarProperty Name="Length_Advisor__c" ColumnName="Length_Advisor__c" />
+                <ScalarProperty Name="Length_Provider__c" ColumnName="Length_Provider__c" />
+                <ScalarProperty Name="Last_Review_Date__c" ColumnName="Last_Review_Date__c" />
+                <ScalarProperty Name="Date_of_Last_Provider_Change__c" ColumnName="Date_of_Last_Provider_Change__c" />
+                <ScalarProperty Name="DecisionMaker_Identified__c" ColumnName="DecisionMaker_Identified__c" />
+                <ScalarProperty Name="Next_RFP_Timing__c" ColumnName="Next_RFP_Timing__c" />
+                <ScalarProperty Name="Satisfiers_Noted__c" ColumnName="Satisfiers_Noted__c" />
+                <ScalarProperty Name="Painpoints_Noted__c" ColumnName="Painpoints_Noted__c" />
+                <ScalarProperty Name="Date_of_Last_Advisor_Change__c" ColumnName="Date_of_Last_Advisor_Change__c" />
+                <ScalarProperty Name="Last_Filing_Year__c" ColumnName="Last_Filing_Year__c" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
